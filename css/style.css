@@ -372,3 +372,17 @@ h6,
 .cookie-banner-accept:hover {
   background-color: #0069d9;
 }
+
+iframe:focus {
+  outline: none;
+}
+
+iframe[seamless] {
+  display: flex;
+}
+
+.iframe-box {
+  height: fit-content;
+  vertical-align: middle;
+  display: flex;
+}
