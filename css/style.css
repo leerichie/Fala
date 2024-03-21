@@ -386,3 +386,59 @@ iframe[seamless] {
   vertical-align: middle;
   display: flex;
 }
+
+.icon-bar {
+  position: fixed;
+  left: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 99999999;
+  -ms-transform: translateY(-50%);
+  -webkit-position: fixed;
+  -webkit-left: 0;
+  -webkit-top: 50%;
+  -webkit-transform: translateY(-50%);
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 8px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+.icon-bar a:hover {
+  transform: scale(1.2);
+}
+
+.facebook {
+  background: #3b5998;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  color: white;
+}
+
+.instagram {
+  background: #d6249f;
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 768px) {
+  .icon-bar {
+    bottom: 10px;
+    left: 20px;
+    transform: translateX(-50%);
+  }
+  .icon-bar a:hover {
+    transform: scale(1.1);
+  }
+}
