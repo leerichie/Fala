@@ -342,7 +342,7 @@ h6,
   text-decoration: none;
 }
 .tel-colours:hover {
-  color: white;
+  color: #06a3da;
 }
 
 .cookie-banner {
@@ -451,10 +451,7 @@ iframe[seamless] {
 @media (max-width: 768px) {
   .icon-bar {
     bottom: 10px;
-    left: 20px;
+    left: 30px;
     transform: translateX(-50%);
-  }
-  .icon-bar a:hover {
-    transform: scale(1.1);
   }
 }
